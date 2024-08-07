@@ -107,7 +107,7 @@ export default function Home() {
             </Stack>
           </Box>
         </Modal>
-        <Button variant="contained" onClick={handleOpen}>
+        <Button className="button" variant="success" onClick={handleOpen}>
           Add New Item
         </Button>
         <Box border={'1px solid #333'}>
@@ -142,10 +142,10 @@ export default function Home() {
                 {quantity}
                 </Typography>
                 <Stack direction="row" spacing={3}>
-                <Button variant="contained" onClick={() => addItem(name)}>
+                <Button className="button" variant="success" onClick={() => addItem(name)}>
                   Add
                 </Button>
-                <Button variant="contained" onClick={() => removeItem(name)}>
+                <Button className="button" variant="success" onClick={() => removeItem(name)}>
                   Remove
                 </Button>
                 </Stack>
